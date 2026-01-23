@@ -1,0 +1,2 @@
+To view the website, copy this into your browser:
+file://wsl$/Ubuntu/home/nfarias/ScienceNiniWeb/v1/index.html
