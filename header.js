@@ -4,14 +4,15 @@ document.addEventListener('DOMContentLoaded', function() {
         header.innerHTML = `
             <div class="header-content">
                 <div class="header-image">
-                    <img src="images/gg_bridge.jpeg" alt="Golden Gate Bridge" style="height: 138px;">
+                    <img src="images/gg_bridge.jpeg" alt="Golden Gate Bridge" style="height: 159px;">
                 </div>
                 <div class="header-title">
                     <h1><a href="index.html" style="color: inherit; text-decoration: none;">Nicole Farias</a></h1>
                     <p class="tagline">Science and Engineering</p>
+                    <p>(Website under construction)</p>
                 </div>
                 <div class="header-logo">
-                    <img src="images/logo.jpeg" alt="Logo" style="height: 138px;">
+                    <img src="images/cmb_white.jpg" alt="Logo" style="height: 159px;">
                 </div>
             </div>
         `;
