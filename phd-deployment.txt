@@ -1,0 +1,7 @@
+Deployment of a cosmic microwave background instrument
+
+Simons Array is an experiment designed to observe the polarization of the cosmic microwave background (CMB). The experiment was located in the Atacama desert, in Chile, at an altitude of 5,200 meters. 
+
+___Figures___
+
+During my PhD, I deployed to Chile four times to work on the commissioning of the POLARBEAR-2b (PB-2b) receiver. I was in the Atacama desert for a total of 16 weeks, working on a variety of tasks to get our instrument up and running. Activities ranged from specifying and installing power lines, through installing electronics on the telescope, to debugging excess noise on detectors at the site. Working at such high altitude required the use of auxiliary oxygen, and being on a mountain in the middle of the desert meant being exposed to harsh elements like intense radiation, high winds and cold temperatures. Additionally, given that Simons Array was 40 minutes away from the closest town, 2 hours hours away from the closest city, and two flights away from the US, we often had to improvise solutions to unforeseen problems using whichever tools were available at the site. Despite the challenges, I am very grateful I had the opportunity to help get our receiver to observe the microwave sky, and to see the amazing landscape of one of the driest deserts on Earth. 

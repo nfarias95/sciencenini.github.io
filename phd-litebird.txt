@@ -1,0 +1,32 @@
+Development of LiteBIRD's cold readout sub-assembly
+The cold readout sub-assembly hosts the cryogenic readout components including the Superconducting Quantum Interference Device (SQUID) Array Amplifier (SAA), the inductor capacitor (LC) chips, plus detector  bias and signal traces.
+My first step in this project was to assess multiple design requirements including
+-	Maximum size and weight
+-	Mechanical strength
+-	Thermal dissipation of SQUIDs
+-	Wiring impedance
+-	SQUID magnetic shielding
+-	Interface with other sub-assemblies
+Second, I tested the impedance of custom-made cables and the thermal conductance of flex-rigid PCBs to evaluate their feasibility in the design. I designed, built and ran the latter test entirely, and measured the thermal conductance of the flexible PCB material Pyralux at sub-Kelvin temperatures for the first time.
+The experiments were used to guide the design of the cold readout sub-assembly. Below are CAD drawings I made of the first design iterations for LiteBIRD. 
+
+Figure captions:
+
+1. CAD drawing of the first design iteration of LiteBIRD's cold readout sub-assembly.
+2. CAD drawing of the second design iteration of LiteBIRD's cold readout sub-assembly.
+3. Assembled test circuit board of cold readout electronics.
+
+
+Characterization of Superconducting Quantum Interference Device (SQUID) Array Amplifiers (SAAs)
+
+LiteBIRD's SAAs are used to amplify the signal from detectors operating at 100 mK before it is further amplified by room-temperature electronics. These devices must have low noise and low power dissipation to meet mission requirements. In my characterization of SAAs for LiteBIRD, I investigated several properties to identify optimal SAA configurations and operating conditions, including:
+- SAA gain and output impedance as a function of SQUID tuning parameters
+- System noise and power dissipation as a function of array size
+- System noise as a function of channel impedance
+- SAA behavior as a function of output wiring
+- System noise as a function of room temperature DAC range
+We find that by optimizing all parameters above, each readout circuit could be connected to a single-stage SAA at 350 mK and meet LiteBIRD's noise and power dissipation requirements.
+
+
+
+

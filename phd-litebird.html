@@ -14,29 +14,55 @@
     <main>
         <section>
             <h2>Cryogenic readout electronics assembly for the LiteBIRD satellite mission</h2>
-            <figure>
+            <figure style="text-align: center;">
                 <img src="images/litebird_main2-1024x494.jpeg" alt="LiteBIRD satellite" style="max-width: 70%; height: auto;">
                 <figcaption>Image source: <a href="https://cosmos.isas.jaxa.jp/litebird-aims-to-find-evidence-for-the-greatest-expansion-in-the-history-of-the-universe/">JAXA COSMOS</a></figcaption>
             </figure>
             <p>LiteBIRD is a JAXA-led satellite mission with the goal of performing an all-sky observation of the polarization of the cosmic microwave background (CMB). LiteBIRD's primary science objective is to search for footprints of primary gravitational waves in the CMB, which, if measured, would be a smoking-gun signal of cosmic inflation.</p>
             <p>During my PhD at UC Berkeley, I worked on the development of the readout hardware for LiteBIRD. Readout refers to the system which sends, receives and multiplex currents between room-temperature electronics and sub-Kelvin, superconducting detectors. As a graduate student, I was responsible for the first design iterations of the cold-readout sub-assembly, and for the noise characterization of cryogenic electronics used in the readout chain.</p>
             <h3>Development of LiteBIRD's cold readout sub-assembly</h3>
-            <figure>
+            <p>The cold readout sub-assembly hosts the cryogenic readout components including the Superconducting Quantum Interference Device (SQUID) Array Amplifier (SAA), the inductor capacitor (LC) chips, plus detector bias and signal traces.</p>
+            <p>My first step in this project was to assess multiple design requirements including</p>
+            <ul style="margin-left: 2em;">
+                <li>Maximum size and weight</li>
+                <li>Mechanical strength</li>
+                <li>Thermal dissipation of SQUIDs</li>
+                <li>Wiring impedance</li>
+                <li>SQUID magnetic shielding</li>
+                <li>Interface with other sub-assemblies</li>
+            </ul>
+            <p>Second, I tested the impedance of custom-made cables and the thermal conductance of flex-rigid PCBs to evaluate their feasibility in the design. I designed, built and ran the latter test entirely, and measured the thermal conductance of the flexible PCB material Pyralux at sub-Kelvin temperatures for the first time.</p>
+            <p>The experiments were used to guide the design of the cold readout sub-assembly. Below are CAD drawings I made of the first design iterations for LiteBIRD.</p>
+            <figure style="text-align: center;">
                 <img src="images/cad_with_carbon_rods.png" alt="CAD with carbon rods" style="max-width: 70%; height: auto;">
+                <figcaption>CAD drawing of the first design iteration of LiteBIRD's cold readout sub-assembly.</figcaption>
             </figure>
-            <figure>
+            <br>
+            <figure style="text-align: center;">
                 <img src="images/cad_flex_rigid.png" alt="CAD flex rigid" style="max-width: 70%; height: auto;">
+                <figcaption>CAD drawing of the second design iteration of LiteBIRD's cold readout sub-assembly.</figcaption>
             </figure>
-            <h3>Characterization of Superconducting Quantum Interference Devices (SQUIDs)</h3>
-            <figure>
+            <br>
+            <h3>Characterization of Superconducting Quantum Interference Device (SQUID) Array Amplifiers (SAAs)</h3>
+            <p>LiteBIRD's SAAs are used to amplify the signal from detectors operating at 100 mK before it is further amplified by room-temperature electronics. These devices must have low noise and low power dissipation to meet mission requirements. In my characterization of SAAs for LiteBIRD, I investigated several properties to identify optimal SAA configurations and operating conditions, including:</p>
+            <ul style="margin-left: 2em;">
+                <li>SAA gain and output impedance as a function of SQUID tuning parameters</li>
+                <li>System noise and power dissipation as a function of array size</li>
+                <li>System noise as a function of channel impedance</li>
+                <li>SAA behavior as a function of output wiring</li>
+                <li>System noise as a function of room temperature DAC range</li>
+            </ul>
+            <p>We find that by optimizing all parameters above, each readout circuit could be connected to a single-stage SAA at 350 mK and meet LiteBIRD's noise and power dissipation requirements.</p>
+            <figure style="text-align: center;">
                 <img src="images/CIMM.png" alt="CIMM" style="max-width: 52%; height: auto;">
+                <figcaption>Assembled test circuit board of cold readout electronics.</figcaption>
             </figure>
             <p><a href="index.html">Back to Home</a></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Nicole Farias. All rights reserved.</p>
+        <p>&copy; 2026 Nicole Farias.</p>
     </footer>
 </body>
 </html>
