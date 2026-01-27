@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.createElement('nav');
+    nav.className = 'side-menu';
+    nav.innerHTML = `
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    `;
+    document.body.prepend(nav);
+
     const header = document.getElementById('site-header');
     if (header) {
         header.innerHTML = `
@@ -8,9 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="header-title">
                     <h1><a href="index.html" style="color: inherit; text-decoration: none;">Nicole Farias</a></h1>
-                    <p class="tagline">Science and Engineering</p>
-                    <p>(Website under construction)</p>
-                </div>
+                    <p class="tagline">Science and Engineering</p>                </div>
                 <div class="header-logo">
                     <img src="images/cmb_white.jpg" alt="Logo" style="height: 159px;">
                 </div>

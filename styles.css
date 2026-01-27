@@ -29,20 +29,26 @@ body::before {
     z-index: -1;
 }
 
-/* Home Button */
-.home-button {
+/* Side Menu */
+.side-menu {
     position: fixed;
     top: 20px;
     left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+}
+
+.side-menu a {
     background-color: #001f3f;
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
     font-weight: bold;
-    z-index: 100;
 }
 
-.home-button:hover {
+.side-menu a:hover {
     background-color: #003366;
 }
 

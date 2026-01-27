@@ -1,0 +1,26 @@
+Sensitivity analysis of the Simons Array experiment
+
+Simons Array is an experiment designed to observe the polarization of the cosmic microwave background (CMB). The experiment was located in the Atacama desert, in Chile, at an altitude of 5,200 meters. 
+
+___Figures___
+
+
+Searching for new cosmological signals requires unprecedented instrument sensitivity, which can be though of as the signal-to-noise ratio of a receiver. Therefore, characterizing and optimizing sensitivity is of paramount importance to CMB experiments. 
+
+During my PhD, I worked on understanding the sensitivity performance of the two Simons Array receivers, POLARBEAR-2a (PB-2a) and POLARBEAR-2b (PB-2b). My research included understanding the behavior of several receiver components, with emphasis on characterizing
+- the array of transition-edge sensors (TESs), which are highly responsive superconducting detectors
+- the readout system, which in Simons Array employs digital frequency-domain multiplexing (DfMux) technology
+- the receiver's throughput, which is a function of the transmission, reflection and absorption of optical elements
+
+figure:dfmux_circuit
+caption: DfMux circuit diagram. Figure reproduced from Farias et al, 2024 [link to https://doi.org/10.1007/s10909-024-03143-9
+]
+
+Given that Simons Array employs thousands of TESs, and that the behavior of each TES is affected by several physical parameters, this worked involved analysis of large-volume datasets, which I performed using mainly Python and SQL databases.
+
+
+Our initial findings can be found here: 
+https://doi.org/10.1007/s10909-024-03143-9
+and here
+https://doi.org/10.1117/12.2627513 
+Final sensitivity results have been submitted for publication in late 2025, and will be made available soon under the title "Performance characterization of the transition-edge sensor array, readout system, and optical coupling of the Simons Array cosmic microwave background experiment"

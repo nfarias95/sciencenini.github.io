@@ -8,13 +8,33 @@
     <script src="header.js"></script>
 </head>
 <body>
-    <a href="index.html" class="home-button">Home</a>
     <header id="site-header"></header>
 
     <main>
         <section>
             <h2>Sensitivity analysis of the Simons Array experiment</h2>
-            <p>Project details coming soon.</p>
+            <p>Simons Array is an experiment designed to observe the polarization of the cosmic microwave background (CMB). The experiment was located in the Atacama desert, in Chile, at an altitude of 5,200 meters.</p>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 1em;">
+                <figure style="text-align: center;">
+                    <img src="images/phd-deployment/SA_desert.png" alt="Simons Array desert" style="height: 270px; width: auto;">
+                </figure>
+                <figure style="text-align: center;">
+                    <img src="images/phd-deployment/SA_site.png" alt="Simons Array site" style="height: 270px; width: auto;">
+                </figure>
+            </div>
+            <p>Searching for new cosmological signals requires unprecedented instrument sensitivity, which can be thought of as the signal-to-noise ratio of a receiver. Therefore, characterizing and optimizing sensitivity is of paramount importance to CMB experiments.</p>
+            <p>During my PhD, I worked on understanding the sensitivity performance of the two Simons Array receivers, POLARBEAR-2a (PB-2a) and POLARBEAR-2b (PB-2b). My research included understanding the behavior of several receiver components, with emphasis on characterizing</p>
+            <ul style="margin-left: 2em;">
+                <li>the array of transition-edge sensors (TESs), which are highly responsive superconducting detectors</li>
+                <li>the readout system, which in Simons Array employs digital frequency-domain multiplexing (DfMux) technology</li>
+                <li>the receiver's throughput, which is a function of the transmission, reflection and absorption of optical elements</li>
+            </ul>
+            <figure style="text-align: center;">
+                <img src="images/phd-simons-array/dfmux_circuit.png" alt="DfMux circuit" style="max-width: 84%; height: auto;">
+                <figcaption>DfMux circuit diagram. Figure reproduced from <a href="https://doi.org/10.1007/s10909-024-03143-9">Farias et al, 2024</a>.</figcaption>
+            </figure>
+            <p>Given that Simons Array employs thousands of TESs, and that the behavior of each TES is affected by several physical parameters, this work involved analysis of large-volume datasets, which I performed using mainly Python and SQL databases.</p>
+            <p>Our initial findings can be found in <a href="https://doi.org/10.1007/s10909-024-03143-9">Farias, N., Adkins, T., de Haan, T. et al. "Understanding the Phase of Responsivity and Noise Sources in Frequency-Domain Multiplexed Readout of Transition Edge Sensor Bolometers". J Low Temp Phys 216, 352–362 (2024)</a> and <a href="https://doi.org/10.1117/12.2627513">Farias, N., Russell, M. et al. "On-site detector noise characterization of the POLARBEAR-2A receiver," Proc. SPIE 12190, (2022)</a>. Final sensitivity results have been submitted for publication in late 2025, and will be made available soon under the title "Performance characterization of the transition-edge sensor array, readout system, and optical coupling of the Simons Array cosmic microwave background experiment".</p>
             <p><a href="index.html">Back to Home</a></p>
         </section>
     </main>
